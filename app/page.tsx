@@ -61,7 +61,7 @@ export default function Home() {
           <Image
             aria-hidden
             src="/file.svg"
-            alt="File icon"
+            alt="File iconjmcass"
             width={16}
             height={16}
           />
