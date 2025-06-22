@@ -1,7 +1,16 @@
 // @app/layout.tsx
 
+// Description
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
+// Components
+import { ThemeProvider } from "@/components/provider/themeProvider";
+
+// Hooks
+import ClientOnly from "@/components/hydration/mounted";
+
+// CSS
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,7 +38,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ClientOnly>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            storageKey="color-theme"
+            themes={["light", "dark"]}
+            enableSystem={true}
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </ClientOnly>
       </body>
     </html>
   );
