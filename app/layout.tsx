@@ -6,8 +6,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 // Components
 import { ThemeProvider } from "@/components/provider/themeProvider";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import NavigationSidebar from "@/components/navigation/index";
+
+// Types
+import { ReactNode } from "react";
 
 // Hooks
 import ClientOnly from "@/components/hydration/mounted";
@@ -33,30 +34,27 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <SidebarProvider>
-          <NavigationSidebar />
-          <main className="w-full h-screen">
-            <ClientOnly>
-              <ThemeProvider
-                attribute="class"
-                defaultTheme="system"
-                storageKey="color-theme"
-                themes={["light", "dark"]}
-                enableSystem
-                disableTransitionOnChange
-              >
-                {children}
-              </ThemeProvider>
-            </ClientOnly>
-          </main>
-        </SidebarProvider>
+        <main className="h-screen w-screen">
+          <ClientOnly>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              storageKey="color-theme"
+              themes={["light", "dark"]}
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+            </ThemeProvider>
+          </ClientOnly>
+        </main>
       </body>
     </html>
   );

@@ -3,7 +3,7 @@
 const page = () => {
   return (
     <>
-      <div className="bg-[#0f1523] size-full">page</div>
+      <div className="size-full bg-[#0f1523]">page</div>
     </>
   );
 };
