@@ -2,8 +2,8 @@
 
 // Components
 import { SidebarProvider } from "@/components/ui/sidebar";
-import NavigationSidebar from "@/components/navigation/index";
-import Header from "@/components/header/index";
+import NavigationSidebar from "@/components/navigation/Index";
+import Header from "@/components/header/Index";
 // Types
 import { ReactNode } from "react";
 

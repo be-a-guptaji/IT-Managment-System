@@ -1,13 +1,9 @@
 // @app/(dashboard)/settings/page.tsx
 
-import React from 'react'
+import React from "react";
 
-type Props = {}
+const page = () => {
+  return <div>page</div>;
+};
 
-const page = (props: Props) => {
-  return (
-    <div>page</div>
-  )
-}
-
-export default page
+export default page;

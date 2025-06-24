@@ -27,7 +27,7 @@ import { cn } from "@/lib/utils";
 // Constants
 import { NavigationItems } from "@/lib/constant";
 
-export default function index() {
+export default function Index() {
   // Get the current pathname
   const pathname = usePathname();
 
