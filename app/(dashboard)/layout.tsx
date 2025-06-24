@@ -3,7 +3,7 @@
 // Components
 import { SidebarProvider } from "@/components/ui/sidebar";
 import NavigationSidebar from "@/components/navigation/index";
-
+import Header from "@/components/header/index";
 // Types
 import { ReactNode } from "react";
 
@@ -16,7 +16,10 @@ const layout = ({
     <>
       <SidebarProvider>
         <NavigationSidebar />
-        <main className="h-screen w-full">{children}</main>
+        <main className="h-screen w-full overflow-hidden">
+          <Header />
+          {children}
+        </main>
       </SidebarProvider>
     </>
   );
