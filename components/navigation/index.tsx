@@ -53,7 +53,8 @@ export default function Index() {
                     asChild
                     className={cn(
                       "h-full",
-                      pathname === item.url && "bg-blue-500 hover:bg-blue-500"
+                      pathname === item.url &&
+                        "bg-blue-500 hover:bg-blue-500 active:bg-blue-500"
                     )}
                   >
                     <Link href={item.url}>
@@ -68,11 +69,11 @@ export default function Index() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter className="cursor-default">
-        <div className="flex h-16 items-center justify-start gap-4 rounded-md border bg-zinc-800/50 px-4">
+        <div className="flex h-16 items-center justify-start gap-4 rounded-md border bg-black/5 px-4 dark:bg-zinc-800/50">
           <p className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 text-lg font-semibold text-white">
             A
           </p>
-          <p className="font-medium text-white">Aryan</p>
+          <p className="font-medium">Aryan</p>
         </div>
       </SidebarFooter>
     </Sidebar>

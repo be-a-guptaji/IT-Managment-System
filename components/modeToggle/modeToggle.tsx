@@ -15,7 +15,7 @@ export function ModeToggle() {
   return (
     <>
       <Switch
-        className="h-6 w-12"
+        className="h-6 w-12 cursor-pointer"
         onCheckedChange={(checked) => setTheme(checked ? "dark" : "light")}
       />
     </>

@@ -1,7 +1,7 @@
 // @lib/constant.ts
 
 // Icons
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
+import { Home, LineChart, Settings } from "lucide-react";
 
 // Navigation items for the sidebar
 export const NavigationItems = [
@@ -11,19 +11,9 @@ export const NavigationItems = [
     icon: Home,
   },
   {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
-  },
-  {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
+    title: "Analysis",
+    url: "/analysis",
+    icon: LineChart,
   },
   {
     title: "Settings",
