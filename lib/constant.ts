@@ -1,7 +1,16 @@
 // @lib/constant.ts
 
 // Icons
-import { Home, LineChart, Settings } from "lucide-react";
+import {
+  BarChart,
+  Home,
+  Inbox,
+  Laptop,
+  LineChart,
+  PlusSquare,
+  Settings,
+  UserPlus,
+} from "lucide-react";
 
 // Navigation items for the sidebar
 export const NavigationItems = [
@@ -20,4 +29,13 @@ export const NavigationItems = [
     url: "/settings",
     icon: Settings,
   },
+];
+
+// Home Navigation Item
+export const HomeNavigationItem = [
+  { title: "All PCs", icon: Laptop },
+  { title: "PC Status", icon: BarChart },
+  { title: "Add New User", icon: UserPlus },
+  { title: "Add New PC", icon: PlusSquare },
+  { title: "Pending Requests", icon: Inbox },
 ];
