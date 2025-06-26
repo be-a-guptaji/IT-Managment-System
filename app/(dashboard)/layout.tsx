@@ -4,6 +4,7 @@
 import { SidebarProvider } from "@/components/ui/sidebar";
 import NavigationSidebar from "@/components/navigation/Index";
 import Header from "@/components/header/Index";
+import Footer from "@/components/footer/Index";
 
 // Types
 import { ReactNode } from "react";
@@ -17,9 +18,10 @@ const layout = ({
     <>
       <SidebarProvider>
         <NavigationSidebar />
-        <main className="h-screen w-full overflow-hidden">
+        <main className="h-screen w-full overflow-x-hidden">
           <Header />
-          {children}
+          <div className="mt-14">{children}</div>
+          <Footer />
         </main>
       </SidebarProvider>
     </>

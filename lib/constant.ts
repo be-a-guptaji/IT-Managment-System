@@ -35,7 +35,7 @@ export const NavigationItems = [
 export const HomeNavigationItem = [
   { title: "All PCs", icon: Laptop },
   { title: "PC Status", icon: BarChart },
-  { title: "Add New User", icon: UserPlus },
+  { title: "Manage User", icon: UserPlus },
   { title: "Add New PC", icon: PlusSquare },
   { title: "Pending Requests", icon: Inbox },
 ];

@@ -1,4 +1,4 @@
-// @app/(Dashboard)/Home/page.tsx
+// @app/(Dashboard)/home/page.tsx
 
 "use client";
 
@@ -47,32 +47,12 @@ const page = () => {
 
       <Separator className="z-10 h-1 bg-black/50 dark:bg-white/50" />
 
-      <main className="flex h-full w-full flex-col items-center justify-center bg-slate-200 p-10 dark:bg-[linear-gradient(135deg,_#0466c8,_#0353a4,_#023e7d,_#002855,_#001845,_#001233)]">
-        {section === HomeNavigationItem[0].title && (
-          <div className="h-full w-full">
-            <AllPCsSection />
-          </div>
-        )}
-        {section === HomeNavigationItem[1].title && (
-          <div className="text-center text-lg font-semibold">
-            {HomeNavigationItem[1].title} Section
-          </div>
-        )}
-        {section === HomeNavigationItem[2].title && (
-          <div className="text-center text-lg font-semibold">
-            {HomeNavigationItem[2].title} Section
-          </div>
-        )}
-        {section === HomeNavigationItem[3].title && (
-          <div className="text-center text-lg font-semibold">
-            {HomeNavigationItem[3].title} Section
-          </div>
-        )}
-        {section === HomeNavigationItem[4].title && (
-          <div className="text-center text-lg font-semibold">
-            {HomeNavigationItem[4].title} Section
-          </div>
-        )}
+      <main className="flex min-h-[calc(100vh-13rem)] w-full flex-col bg-slate-200 p-10 dark:bg-[linear-gradient(135deg,_#0466c8,_#0353a4,_#023e7d,_#002855,_#001845,_#001233)]">
+        {section === HomeNavigationItem[0].title && <AllPCsSection />}
+        {section === HomeNavigationItem[1].title && ""}
+        {section === HomeNavigationItem[2].title && ""}
+        {section === HomeNavigationItem[3].title && ""}
+        {section === HomeNavigationItem[4].title && ""}
       </main>
     </>
   );
