@@ -15,12 +15,15 @@ import { Separator } from "@/components/ui/separator";
 // Utils
 import { cn } from "@/lib/utils";
 
+// Sections
+import AllPCsSection from "@/app/(Dashboard)/home/_components/AllPCsSection";
+
 const page = () => {
   const [section, setSection] = useState("All PCs");
 
   return (
     <>
-      <header className="flex items-center justify-center gap-8 rounded-lg p-6">
+      <header className="flex items-center justify-center gap-8 bg-slate-200 p-6 dark:bg-black">
         {HomeNavigationItem.map((item) => {
           const IconComponent = item.icon;
           return (
@@ -41,7 +44,36 @@ const page = () => {
           );
         })}
       </header>
-      <Separator className="z-10 h-1 dark:bg-white/50" />
+
+      <Separator className="z-10 h-1 bg-black/50 dark:bg-white/50" />
+
+      <main className="flex h-full w-full flex-col items-center justify-center bg-slate-200 p-10 dark:bg-[linear-gradient(135deg,_#0466c8,_#0353a4,_#023e7d,_#002855,_#001845,_#001233)]">
+        {section === HomeNavigationItem[0].title && (
+          <div className="h-full w-full">
+            <AllPCsSection />
+          </div>
+        )}
+        {section === HomeNavigationItem[1].title && (
+          <div className="text-center text-lg font-semibold">
+            {HomeNavigationItem[1].title} Section
+          </div>
+        )}
+        {section === HomeNavigationItem[2].title && (
+          <div className="text-center text-lg font-semibold">
+            {HomeNavigationItem[2].title} Section
+          </div>
+        )}
+        {section === HomeNavigationItem[3].title && (
+          <div className="text-center text-lg font-semibold">
+            {HomeNavigationItem[3].title} Section
+          </div>
+        )}
+        {section === HomeNavigationItem[4].title && (
+          <div className="text-center text-lg font-semibold">
+            {HomeNavigationItem[4].title} Section
+          </div>
+        )}
+      </main>
     </>
   );
 };

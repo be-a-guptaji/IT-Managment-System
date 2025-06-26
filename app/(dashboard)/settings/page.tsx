@@ -1,4 +1,4 @@
-// @app/(dashboard)/settings/page.tsx
+// @app/(Dashboard)/settings/page.tsx
 
 import React from "react";
 
