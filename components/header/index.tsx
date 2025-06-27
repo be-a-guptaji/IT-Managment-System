@@ -5,7 +5,6 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import { ModeToggle } from "@/components/modeToggle/modeToggle";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 
 // Icons
 import { LogOut } from "lucide-react";
@@ -13,7 +12,7 @@ import { LogOut } from "lucide-react";
 const Index = () => {
   return (
     <>
-      <div className="fixed top-0 right-0 w-[calc(100%-18rem)] z-50 bg-white dark:bg-[#1c1917]">
+      <div className="sticky top-0 z-50 bg-white dark:bg-[#1c1917]">
         <header className="z-10 flex h-14 w-full items-center justify-between px-4 shadow-md backdrop-blur-sm dark:bg-[#1c1917]">
           <div className="flex items-center justify-center gap-6">
             <SidebarTrigger className="cursor-pointer" />

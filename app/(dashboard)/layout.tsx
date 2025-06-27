@@ -20,7 +20,7 @@ const layout = ({
         <NavigationSidebar />
         <main className="h-screen w-full overflow-x-hidden">
           <Header />
-          <div className="mt-14">{children}</div>
+          {children}
           <Footer />
         </main>
       </SidebarProvider>
