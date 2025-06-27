@@ -31,7 +31,7 @@ const AllPCsSection = () => {
       <div className="h-full w-full">
         <div className="mb-8 flex w-full items-center justify-between gap-12 rounded-lg">
           <div className="flex w-full items-center justify-between p-2">
-            <Button className="flex h-12 w-[calc(100%-4rem)] cursor-pointer items-center justify-start bg-zinc-400/75 dark:bg-zinc-900 dark:text-white">
+            <Button className="flex h-12 w-[calc(100%-4rem)] cursor-text items-center justify-start bg-zinc-400/75 dark:bg-zinc-900 dark:text-white">
               <Search className="mr-4 ml-8 h-5 w-5" />
               <span className="ml-2">Search PCs</span>
             </Button>

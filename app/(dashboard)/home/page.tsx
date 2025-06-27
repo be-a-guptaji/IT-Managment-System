@@ -17,6 +17,7 @@ import { cn } from "@/lib/utils";
 
 // Sections
 import AllPCsSection from "@/app/(Dashboard)/home/_components/AllPCsSection";
+import ManageUser from "@/app/(Dashboard)/home/_components/ManageUser";
 
 const page = () => {
   const [section, setSection] = useState("All PCs");
@@ -30,7 +31,7 @@ const page = () => {
             <Fragment key={item.title}>
               <Button
                 className={cn(
-                  "flex cursor-pointer items-center gap-2 hover:scale-105 active:scale-95",
+                  "flex w-48 cursor-pointer items-center gap-2 hover:scale-105 active:scale-95",
                   section === item.title &&
                     "bg-blue-500 hover:bg-blue-500 active:bg-blue-500"
                 )}
@@ -49,10 +50,8 @@ const page = () => {
 
       <main className="flex min-h-[calc(100vh-13rem)] w-full flex-col bg-slate-200 p-10 dark:bg-[linear-gradient(135deg,_#0466c8,_#0353a4,_#023e7d,_#002855,_#001845,_#001233)]">
         {section === HomeNavigationItem[0].title && <AllPCsSection />}
-        {section === HomeNavigationItem[1].title && ""}
+        {section === HomeNavigationItem[1].title && <ManageUser />}
         {section === HomeNavigationItem[2].title && ""}
-        {section === HomeNavigationItem[3].title && ""}
-        {section === HomeNavigationItem[4].title && ""}
       </main>
     </>
   );
