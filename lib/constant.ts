@@ -4,9 +4,7 @@
 import {
   BarChart,
   Home,
-  Inbox,
   Laptop,
-  LineChart,
   PlusSquare,
   Settings,
   UserPlus,
@@ -22,7 +20,7 @@ export const NavigationItems = [
   {
     title: "Analysis",
     url: "/analysis",
-    icon: LineChart,
+    icon: BarChart,
   },
   {
     title: "Settings",
@@ -35,7 +33,7 @@ export const NavigationItems = [
 export const HomeNavigationItem = [
   { title: "All PCs", icon: Laptop },
   { title: "Manage User", icon: UserPlus },
-  { title: "Add New", icon: PlusSquare },
+  { title: "Add IT Personal", icon: PlusSquare },
 ];
 
 // const chooseColor = (status) => {

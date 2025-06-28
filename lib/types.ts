@@ -2,7 +2,7 @@
 
 // Runtime object for roles
 export const USER_ROLES = {
-  IT_ADMIN: "IT_Admin",
+  IT_ADMIN: "IT Admin",
   USER: "User",
   SUPER_ADMIN: "SuperAdmin",
 } as const;

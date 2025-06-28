@@ -16,8 +16,8 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
 // Sections
-import AllPCsSection from "@/app/(Dashboard)/home/_components/AllPCsSection";
-import ManageUser from "@/app/(Dashboard)/home/_components/ManageUser";
+import AllPCsSection from "@/app/(Dashboard)/admin/home/_components/AllPCsSection";
+import ManageUser from "@/app/(Dashboard)/admin/home/_components/ManageUser";
 
 const page = () => {
   const [section, setSection] = useState("All PCs");

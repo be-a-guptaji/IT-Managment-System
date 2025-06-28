@@ -1,7 +1,13 @@
 // @app/(Dashboard)/home/_components/AllPCsSection.tsx
 
 // Components
-import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import SearchBar from "@/components/search/Index";
 
 const AllPCsSection = () => {
@@ -13,25 +19,41 @@ const AllPCsSection = () => {
           <div className="mb-2 flex h-full w-full flex-col items-center justify-center">
             <div className="mb-4 flex w-full gap-4">
               <div className="flex flex-col overflow-hidden">
-                <div className="text-left text-sm">Device Name</div>
-                <div className="text-left text-sm">User Name</div>
+                <div className="text-sm">Device Name</div>
+                <div className="text-sm">User Name</div>
               </div>
               <div className="flex items-center justify-center rounded-xl border border-black/20 px-3 text-sm dark:border-white/30">
-                Active
+                Para 19
               </div>
             </div>
 
             <div className="text-lg font-bold">23:23:34:34:65:12</div>
             <div className="text-lg font-bold">23:23:34:34:65:12</div>
           </div>
-          <div className="flex w-full items-center justify-center gap-2">
+          {/* <div className="flex w-full items-center justify-center gap-2">
             <Button className="w-1/2 cursor-pointer bg-sky-300 text-sky-700 hover:bg-sky-400 active:bg-sky-500">
               Edit
             </Button>
             <Button className="w-1/2 cursor-pointer bg-red-300 text-red-700 hover:bg-red-400 active:bg-red-500">
               Delete
             </Button>
-          </div>
+          </div> */}
+          <Select>
+            <SelectTrigger className="!h-12 w-full cursor-pointer bg-zinc-400/75 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-900">
+              <SelectValue placeholder="Theme" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="light" className="cursor-pointer">
+                Light
+              </SelectItem>
+              <SelectItem value="dark" className="cursor-pointer">
+                Dark
+              </SelectItem>
+              <SelectItem value="system" className="cursor-pointer">
+                System
+              </SelectItem>
+            </SelectContent>
+          </Select>
         </div>
       </div>
     </>

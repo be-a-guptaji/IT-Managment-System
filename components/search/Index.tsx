@@ -44,12 +44,19 @@ const AllPCsSection = () => {
               <SelectValue placeholder="Theme" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="light">Light</SelectItem>
-              <SelectItem value="dark">Dark</SelectItem>
-              <SelectItem value="system">System</SelectItem>
+              <SelectItem value="light" className="cursor-pointer">
+                Light
+              </SelectItem>
+              <SelectItem value="dark" className="cursor-pointer">
+                Dark
+              </SelectItem>
+              <SelectItem value="system" className="cursor-pointer">
+                System
+              </SelectItem>
             </SelectContent>
           </Select>
         </div>
+
         <CommandDialog open={open} onOpenChange={setOpen}>
           <CommandInput placeholder="Search all channels and members" />
           <CommandList className="py-2">
