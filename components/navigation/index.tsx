@@ -25,11 +25,19 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 // Constants
-import { NavigationItems } from "@/lib/constant";
+import { UserNavigationItems, AdminNavigationItems } from "@/lib/constant";
 
-export default function Index() {
+// Type
+type NavigationItem = {
+  isAdmin: boolean;
+};
+
+export default function Index(isAdmin: NavigationItem) {
   // Get the current pathname
   const pathname = usePathname();
+
+  // Change Option on the basis of admin or user
+  const NavigationItems = isAdmin ? AdminNavigationItems : AdminNavigationItems;
 
   return (
     <Sidebar>

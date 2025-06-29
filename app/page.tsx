@@ -1,8 +1,5 @@
 // @app/page.tsx
 
-// Hooks
-import { redirect } from "next/navigation";
-
-export default function page() {
-  redirect("/home");
+export default async function page() {
+  const res = await fetch("http://localhost:3000/api/login");
 }

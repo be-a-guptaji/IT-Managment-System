@@ -17,7 +17,7 @@ const layout = ({
   return (
     <>
       <SidebarProvider>
-        <NavigationSidebar />
+        <NavigationSidebar isAdmin />
         <main className="h-screen w-full overflow-x-hidden">
           <Header />
           {children}

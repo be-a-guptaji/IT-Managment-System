@@ -2,7 +2,9 @@
 
 // Icons
 import {
-  BarChart,
+  CloudLightning,
+  Edit,
+  History,
   Home,
   Laptop,
   PlusSquare,
@@ -10,21 +12,60 @@ import {
   UserPlus,
 } from "lucide-react";
 
-// Navigation items for the sidebar
-export const NavigationItems = [
+// Navigation items for the User sidebar
+export const UserNavigationItems = [
   {
     title: "Home",
     url: "/home",
     icon: Home,
   },
   {
-    title: "Analysis",
-    url: "/analysis",
-    icon: BarChart,
+    title: "Edit Details",
+    url: "/edit-details",
+    icon: Edit,
+  },
+  {
+    title: "Complaint",
+    url: "/complaint",
+    icon: CloudLightning,
+  },
+  {
+    title: "History",
+    url: "/history",
+    icon: History,
   },
   {
     title: "Settings",
     url: "/settings",
+    icon: Settings,
+  },
+];
+
+// Navigation items for the User sidebar
+export const AdminNavigationItems = [
+  {
+    title: "Home",
+    url: "/admin/home",
+    icon: Home,
+  },
+  {
+    title: "Add IT Personal",
+    url: "/admin/add-it-personal",
+    icon: UserPlus,
+  },
+  {
+    title: "Manage PCs",
+    url: "/admin/manage-pcs",
+    icon: Edit,
+  },
+  {
+    title: "Pending Complaints",
+    url: "/admin/pending-complaint",
+    icon: CloudLightning,
+  },
+  {
+    title: "Settings",
+    url: "/admin/settings",
     icon: Settings,
   },
 ];
