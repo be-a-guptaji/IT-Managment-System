@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils";
 // Sections
 import AllPCsSection from "@/app/(Dashboard)/admin/home/_components/AllPCsSection";
 import ManageUser from "@/app/(Dashboard)/admin/home/_components/ManageUser";
+import ITPersonalForm from "@/app/(Dashboard)/admin/home/_components/ITPersonalForm";
 
 const page = () => {
   const [section, setSection] = useState("All PCs");
@@ -51,7 +52,7 @@ const page = () => {
       <main className="flex min-h-[calc(100vh-13rem)] w-full flex-col bg-slate-200 p-10 dark:bg-[linear-gradient(135deg,_#0466c8,_#0353a4,_#023e7d,_#002855,_#001845,_#001233)]">
         {section === HomeNavigationItem[0].title && <AllPCsSection />}
         {section === HomeNavigationItem[1].title && <ManageUser />}
-        {section === HomeNavigationItem[2].title && ""}
+        {section === HomeNavigationItem[2].title && <ITPersonalForm />}
       </main>
     </>
   );
